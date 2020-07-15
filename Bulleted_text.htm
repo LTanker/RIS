@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+<ul>
+	<li>Poland</li>
+	<li>Germany</li>
+	<li>France</li>
+</ul>  
+
+<script>
+$( "li" ).each(function() 
+{ 
+	$(this).prepend("<b>" + ($(this).index() +1) + "</b>"+" ");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ <input type="text" id="myInput"><br><br>
+<div></div>
+<script>
+	$("input").change(function(){
+	var inp = $("#myInput").val();
+ 	$("div").text("Text changed to: " + inp);
+	});
+</script>
+</body>
+</html>
